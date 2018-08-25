@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "9.10.1"
+sudo: enabled
+install:
+  - npm install
+script:
+  - npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: "5Gfh_QjhjUC1kSv8y-JvAA"
