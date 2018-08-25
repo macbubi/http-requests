@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "react-scripts": "1.1.5"
   },
   "dependencies": {
@@ -12,7 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --coverage --coverageReporters=text-lcov | coveralls",
     "eject": "react-scripts eject"
   }
 }
